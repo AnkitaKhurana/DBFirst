@@ -43,6 +43,58 @@
         </dd>
 
     </dl>
+    <table class="table">
+
+        <tr>
+
+            <th>Team</th>
+
+            <th>Odi Runs</th>
+
+            <th>Test Runs</th>
+
+            <th>Wickets</th>
+
+        </tr>
+
+
+
+        @foreach (var item in Model.Cricketer_Details)
+
+        {
+
+            <tr>
+
+                <td>
+
+                    @Html.DisplayFor(ModelItem => item.Team)
+
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(ModelItem => item.ODI_Runs)
+
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(ModelItem => item.Test_Runs)
+
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(ModelItem => item.Wickets)
+
+                </td>
+
+            </tr>
+
+        }
+
+    </table>
+
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
