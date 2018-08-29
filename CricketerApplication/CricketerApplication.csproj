@@ -249,11 +249,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Cricketers\Create.cshtml" />
-    <Content Include="Views\Cricketers\Delete.cshtml" />
-    <Content Include="Views\Cricketers\Details.cshtml" />
-    <Content Include="Views\Cricketers\Edit.cshtml" />
-    <Content Include="Views\Cricketers\Index.cshtml" />
     <Content Include="Views\Cricketer_Details\Create.cshtml" />
     <Content Include="Views\Cricketer_Details\Delete.cshtml" />
     <Content Include="Views\Cricketer_Details\Details.cshtml" />
@@ -269,6 +264,11 @@
     <Content Include="Views\Cricketer_Test_Statistics\Details.cshtml" />
     <Content Include="Views\Cricketer_Test_Statistics\Edit.cshtml" />
     <Content Include="Views\Cricketer_Test_Statistics\Index.cshtml" />
+    <Content Include="Views\Cricketers\Create.cshtml" />
+    <Content Include="Views\Cricketers\Delete.cshtml" />
+    <Content Include="Views\Cricketers\Details.cshtml" />
+    <Content Include="Views\Cricketers\Edit.cshtml" />
+    <Content Include="Views\Cricketers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

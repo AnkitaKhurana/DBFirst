@@ -46,7 +46,7 @@ namespace CricketerApplication.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,ODI,Test")] Cricketer cricketer)
+        public ActionResult Create([Bind(Include = "ID,Name,ODI,Test,Grade")] Cricketer cricketer)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace CricketerApplication.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,ODI,Test")] Cricketer cricketer)
+        public ActionResult Edit([Bind(Include = "ID,Name,ODI,Test,Grade")] Cricketer cricketer)
         {
             if (ModelState.IsValid)
             {
