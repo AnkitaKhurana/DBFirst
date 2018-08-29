@@ -11,7 +11,9 @@ namespace CricketerApplication.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
+
     public partial class Cricketer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,9 +25,20 @@ namespace CricketerApplication.Models
         }
     
         public int ID { get; set; }
+
+        [Required]
+        [StringLength(50, MinimumLength = 4)]
         public string Name { get; set; }
+
+        [Required]
+        [Range(1, 500)]
         public Nullable<int> ODI { get; set; }
+
+        [Required]
+        [Range(1, 500)]
         public Nullable<int> Test { get; set; }
+
+        [Required]
         public string Grade { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
